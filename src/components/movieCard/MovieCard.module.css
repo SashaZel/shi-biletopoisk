@@ -1,0 +1,40 @@
+.container {
+  margin: 0px 33px 16px 0px;
+  padding: 24px;
+  width: 100%;
+  background-color: var(--color-bg-third);
+  border-radius: 8px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.imageContainer {
+  position: relative;
+  width: 100px;
+  height: 120px;
+  display: block;
+}
+
+.imagePreview {
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.info {
+  width: 100%;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.infoHeader {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.infoGenre {
+  margin-top: 8px;
+  font-size: 16px;
+  font-style: italic;
+  line-height: 20px;
+}

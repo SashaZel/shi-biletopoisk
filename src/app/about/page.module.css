@@ -1,0 +1,10 @@
+.h2El {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 32px;
+}
+
+.pEl {
+  margin-top: 16px;
+  line-height: 24px;
+}

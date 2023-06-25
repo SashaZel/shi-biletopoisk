@@ -1,0 +1,14 @@
+.container {
+  margin: 8px;
+  padding: 4px;
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  color: var(--color-text-white);
+  background-color: var(--orange);
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  font-weight: 600;
+  align-items: center;
+}

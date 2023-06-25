@@ -1,0 +1,35 @@
+.dummyMenuContainer {
+  padding: 24px;
+  width: 408px;
+  height: calc(100vh - 200px);
+  position: fixed;
+  z-index: 5;
+  top: 116px;
+  left: 32px;
+  background-color: var(--color-bg-third);
+  border-radius: 8px;
+}
+
+.dummyMenuHeader {
+  margin-top: 16px;
+  width: 20%;
+  height: 24px;
+  background-color: var(--text-primary);
+  opacity: 0.05;
+  border-radius: 4px;
+}
+
+.dummyMenuElement {
+  margin-top: 16px;
+  width: 100%;
+  height: calc(100% - 204px);
+  height: 36px;
+  border: 1px solid var(--border-default);
+  border-radius: 8px;
+  opacity: 0.7;
+}
+
+.firstMoviesListContainer {
+  margin-left: 431px;
+  list-style-type: none;
+}

@@ -1,0 +1,33 @@
+.avatar {
+  border-radius: 8px;
+  background: var(--gray-5, #e0e0e0);
+  display: flex;
+  width: 100px;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  width: 100%;
+}
+
+.top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rating {
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.ratingNum {
+  font-weight: 600;
+}
+
+.text {
+  margin-top: 16px;
+}

@@ -1,0 +1,22 @@
+.container {
+  height: calc(100vh - 116px - 96px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cartElContainer {
+  padding: 24px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-bg-third);
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.totalEl {
+  display: block;
+}

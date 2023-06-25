@@ -1,0 +1,55 @@
+.header {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 32px;
+}
+
+.accCard {
+  margin-top: 16px;
+  width: 100%;
+  border-radius: 8px;
+  background-color: var(--color-bg-third, #fff);
+  text-align: left;
+}
+
+.accButton {
+  padding: 24px 24px 16px 24px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  border-radius: 8px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.accIcon {
+  display: block;
+}
+
+.accIconDown {
+  transition: all 0.3s ease-out;
+}
+
+.accIconUp {
+  transform: rotate(180deg);
+  transition: all 0.3s ease-out;
+}
+
+.accText {
+  padding: 0 88px 24px 24px;
+  overflow: hidden;
+}
+
+.accTextHidden {
+  padding-bottom: 8px;
+  height: 0px;
+  opacity: 0;
+  transition: all 0.3s ease-out;
+}
+
+.accTextVisible {
+  transition: all 0.7s ease-out;
+}
