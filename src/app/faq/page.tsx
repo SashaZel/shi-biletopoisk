@@ -64,7 +64,7 @@ export default function FAQ() {
   return (
     <section>
       <div className="globalCard">
-        <h2 className={styles.header}>Вопросы-ответы</h2>
+        <h2 className="globalH1">Вопросы-ответы</h2>
       </div>
       <MenuAccordion>{contentAccordion}</MenuAccordion>
     </section>

@@ -1,5 +1,4 @@
 import { CONTENT_PAGE_ABOUT } from "../../../utils/content";
-import styles from "./page.module.css";
 import { createHash } from "node:crypto";
 
 function processMarkup(content: string[][]) {
@@ -10,14 +9,14 @@ function processMarkup(content: string[][]) {
     let element;
     if (tag === "h2") {
       element = (
-        <h2 className={styles.h2El} key={hash}>
+        <h2 className="globalH1" key={hash}>
           {text}
         </h2>
       );
     }
     if (tag === "p") {
       element = (
-        <p className={styles.pEl} key={hash}>
+        <p key={hash}>
           {text}
         </p>
       );

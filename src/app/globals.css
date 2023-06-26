@@ -60,6 +60,7 @@ h1 {
 }
 
 p {
+  margin-top: 16px;
   line-height: 24px;
 }
 
@@ -96,4 +97,10 @@ button:hover {
 
 .globalBold {
   font-weight: 600;
+}
+
+.globalH1 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 32px;
 }
