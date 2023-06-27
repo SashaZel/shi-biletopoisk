@@ -3,7 +3,7 @@ import { ICinema } from "./biletoserviceApiTypes";
 export const genres = ["unknown", "fantasy", "horror", "action", "comedy"] as const;
 export const cinemas = ["He выбран", "Синема сад", "4 с половиной звезды", "Дружба"] as const;
 
-export const BASE_URL = "http://localhost:3001/api/" as const;
+export const BASE_URL = process.env.BASE_URL || "http://localhost:3001/api/";
 
 export const GENRE_INT = {
   RUS: {
