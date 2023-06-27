@@ -6,6 +6,7 @@ import { cinemaQuery } from "./reduxUtils";
 export const biletopoiskApi = createApi({
   reducerPath: "biletopoiskApi",
   baseQuery: fetchBaseQuery({ baseUrl: BASE_URL }),
+  keepUnusedDataFor: 60,
   endpoints: (builder) => ({
     getMovieById: builder.query<IMovie, string>({
       query: (movieID) => `movie?movieId=${movieID}`,

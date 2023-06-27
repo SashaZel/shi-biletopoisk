@@ -7,7 +7,7 @@ interface IReviewsPanelProps {
 }
 
 async function getReview(id: string) {
-  const res = await fetch(`${BASE_URL}reviews?movieId=${id}`);
+  const res = await fetch(`${BASE_URL}reviews?movieId=${id}`, { next: { revalidate: 60 } });
   if (!res.ok) {
     throw new Error("@getReview() @ReviewPanel Failed to fetch review data");
   }

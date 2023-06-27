@@ -10,7 +10,7 @@ interface IPageProps {
 }
 
 async function getMovie(id: string) {
-  const res = await fetch(`${BASE_URL}movie?movieId=${id}`);
+  const res = await fetch(`${BASE_URL}movie?movieId=${id}`, { next: { revalidate: 86400 } });
 
   if (!res.ok) {
     throw new Error("Failed to fetch data");

@@ -3,7 +3,7 @@ import { IMovie } from "../../utils/biletoserviceApiTypes";
 import FilterWrapper from "@/components/filterWrapper/FilterWrapper";
 
 async function getFirstMovies() {
-  const res = await fetch(`${BASE_URL}movies`);
+  const res = await fetch(`${BASE_URL}movies`, { next: { revalidate: 3600 } });
 
   if (!res.ok) {
     throw new Error("@getFirstMovies() @Home: Failed to fetch data");
