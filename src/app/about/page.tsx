@@ -1,6 +1,11 @@
 import { CONTENT_PAGE_ABOUT } from "../../../utils/content";
 import { createHash } from "node:crypto";
 
+export const metadata = {
+  title: "Билетопоиск - О нас",
+  description: "Билетопоиск - О нас",
+};
+
 function processMarkup(content: string[][]) {
   const result = [];
   for (let i = 0; i < content.length; i++) {

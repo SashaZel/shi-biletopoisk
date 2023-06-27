@@ -1,9 +1,10 @@
-import ReviewsPanel from "@/components/reviewsPanel/ReviewsPanel";
-import { IMovie } from "../../../../utils/biletoserviceApiTypes";
-import { BASE_URL, GENRE_INT } from "../../../../utils/consts";
+import { Metadata, ResolvingMetadata } from "next";
 import Image from "next/image";
-import styles from "./page.module.css";
+import { BASE_URL, GENRE_INT } from "../../../../utils/consts";
+import ReviewsPanel from "@/components/reviewsPanel/ReviewsPanel";
 import AddItemPanel from "@/components/addItemPanel/AddItemPanel";
+import { IMovie } from "../../../../utils/biletoserviceApiTypes";
+import styles from "./page.module.css";
 
 interface IPageProps {
   params: { movieID: string };
@@ -17,6 +18,14 @@ async function getMovie(id: string) {
   }
   const result = res.json() as Promise<IMovie>;
   return result;
+}
+
+export async function generateMetadata({ params }: IPageProps, parent?: ResolvingMetadata): Promise<Metadata> {
+  const movie = await getMovie(params.movieID);
+
+  return {
+    title: `Билетопоиск - ${movie.title}`,
+  };
 }
 
 export default async function MoviePage({ params }: IPageProps) {
